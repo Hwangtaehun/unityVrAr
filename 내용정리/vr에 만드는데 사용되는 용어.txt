@@ -1,0 +1,16 @@
+DrawCrosshair()함수의 파라미터
+isHand: 손을 위치와 방향으로 레이를 쏴서 크로스헤어를 그릴지 여부를 알 수 있다. 
+false이면 화면 정중앙으로 레이를 쏴서 크로스헤어를 그린다.
+
+hand: 오른손인지 왼손인지 여부를 알 수 있다.
+
+Plane클래스의 생성자 함수
+public Plane(Vector3 inNormal, Vector3 inPoint);
+public Plane(Vector3 inNormal, float d);
+public Plane(Vector3 a, Vector3 b, Vector3 c);
+
+Plane 생성자 함수의 파라미터
+inNormal: 플레인의 면이 향할 방향
+inPoint: 플레인이 지나는 한 점
+d: 원점에서의 거리
+a, b, c: 삼각형 평면 각 점의 위치
