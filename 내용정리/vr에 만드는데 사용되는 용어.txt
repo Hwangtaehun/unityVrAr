@@ -14,3 +14,44 @@ inNormal: 플레인의 면이 향할 방향
 inPoint: 플레인이 지나는 한 점
 d: 원점에서의 거리
 a, b, c: 삼각형 평면 각 점의 위치
+
+OvrInput의 Get()함수 원형
+public static bool Get(Button virtualMask, Controller controllerMask = Cotroller.Active)
+virtualMask: OvrInput.Button 열거형 타입의 값
+controllerMask: 사용할 컨트롤러 RTouch, LTouch 값, Active일 때는 현재 사용하는 컨트롤러 
+
+public static Vector2 Get(Axis2D vritualMask, Controller controllerMask = Controller.Active); 
+virtualMask: PrimaryThumbstick, PrimaryTouchpad, SecondaryThumstick, SecondaryTouchpad, Any값 중 하나를 갖습니다.
+controllerMask: RTouch, LTouch, Active 중 하나를 갖습니다.
+
+PlayVibration()함수의 파라미터 값
+duration: 진동의 지속 시간
+frequency: 진동의 빈도, 0~1사이 값
+amplitude: 진동 크기, 0~1사이 값
+hand: 왼쪽 또는 오른쪽 컨트롤러
+
+VibrationCoroutine()코루틴 함수의 파라미터
+duration: 지속 시간
+frequency: 빈도
+Amplitude: 진동크기
+hand: RTouch 또는 LTouch
+
+SteamVR_Input의 GetState()함수 원형
+public static bool GetState(string action, SteamVR_Input_Sources inputSource, bool caseSensitive = false)
+action: SteamVR Input 창에 등록된 액션 값
+inputSources: LeftHand, RightHand 값
+caseSensitive: 대소문자 구분 여부
+
+SteamVR_Input의 GetVecotr2()함수 원형
+public static Vector2 GetVector2(string action, StreamVR_Input_Sources inputSource, bool caseSensitive = false)
+action: SteamVR Input 창에 등록된 액션 값
+inputSources: LeftHand, RightHand 값
+caseSensitive: 대소문자 구분 여부
+
+StreamVR_Action_Vibration.Execute()함수 원형
+public void Execute(float secondsFromNow, float durationSeconds, float frequency, float amplitude, SteamVR_Input_Sources inputSource)
+secondsFromNow: 진동이 시작할 시간
+durationSeconds: 지속 시간
+frequency: 빈도
+amplitude: 진동 크기
+inputSource: LeftHand, RightHand
