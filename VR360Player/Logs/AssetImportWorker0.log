@@ -1,0 +1,180 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.43f1 (75bff06b76bf) revision 7716848'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22621) 64bit Professional' Language: 'ko' Physical Memory: 32620 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.43f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/Github/unityVrAr/VR360Player
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+58353
+Successfully changed project path to: D:/Github/unityVrAr/VR360Player
+D:/Github/unityVrAr/VR360Player
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 26.70 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.43f1 (75bff06b76bf)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.43f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Github/unityVrAr/VR360Player/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3070 Laptop GPU (ID=0x24dd)
+    Vendor:   
+    VRAM:     8033 MB
+    Driver:   31.0.15.3141
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.43f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.43f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.43f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56732
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.43f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002398 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 24.28 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.454 seconds
+Domain Reload Profiling:
+	ReloadAssembly (454ms)
+		BeginReloadAssembly (65ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (332ms)
+			LoadAssemblies (62ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (101ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (21ms)
+			SetupLoadedEditorAssemblies (122ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (24ms)
+				BeforeProcessingInitializeOnLoad (13ms)
+				ProcessInitializeOnLoadAttributes (59ms)
+				ProcessInitializeOnLoadMethodAttributes (21ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.004004 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.36 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.757 seconds
+Domain Reload Profiling:
+	ReloadAssembly (758ms)
+		BeginReloadAssembly (117ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (16ms)
+		EndReloadAssembly (590ms)
+			LoadAssemblies (84ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (183ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (27ms)
+			SetupLoadedEditorAssemblies (258ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (66ms)
+				ProcessInitializeOnLoadAttributes (167ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (1ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.37 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1490 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 68.1 MB.
+System memory in use after: 68.2 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 1926.
+Total: 2.361900 ms (FindLiveObjects: 0.120700 ms CreateObjectMapping: 0.034800 ms MarkObjects: 2.128900 ms  DeleteObjects: 0.076700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets
+  artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42d402b061de3733987d63b9cc3b64de') in 0.008556 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.579612 seconds.
+  path: Assets/Video
+  artifactKey: Guid(6a609b584d1791b4baaddc83ae449094) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Video using Guid(6a609b584d1791b4baaddc83ae449094) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0b2258237eddbd35c475e63c9ed2a52') in 0.006189 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 25.036898 seconds.
+  path: Assets/Video/ARA_1_mossy_360.mp4
+  artifactKey: Guid(e5b07607bf5e6004f803545480bf2083) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Video/ARA_1_mossy_360.mp4 using Guid(e5b07607bf5e6004f803545480bf2083) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '540a76b126a271071a5d908696344734') in 0.154730 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000175 seconds.
+  path: Assets/Video/ARA_3_arch_FHD.mp4
+  artifactKey: Guid(cac38d7bb4d29e746bb319d48b072592) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Video/ARA_3_arch_FHD.mp4 using Guid(cac38d7bb4d29e746bb319d48b072592) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edb63fcaada63990f640d8bb28b78078') in 0.005990 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000280 seconds.
+  path: Assets/Video/ARA_3_arch_360.mp4
+  artifactKey: Guid(7824f75808c0377439345c761af95ccb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Video/ARA_3_arch_360.mp4 using Guid(7824f75808c0377439345c761af95ccb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8dcfc826e95c6157cbf5f13d76f40b43') in 0.006552 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/Video/ARA_2_winter_360.mp4
+  artifactKey: Guid(0582fe99a5072344a902f052f7e52c4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Video/ARA_2_winter_360.mp4 using Guid(0582fe99a5072344a902f052f7e52c4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '910fabec45ac49da3ffdc469d4ad01e2') in 0.006168 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000197 seconds.
+  path: Assets/Video/ARA_1_mossy_FHD.mp4
+  artifactKey: Guid(a8c39a87afb7cc740af6bbc49c10cc73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Video/ARA_1_mossy_FHD.mp4 using Guid(a8c39a87afb7cc740af6bbc49c10cc73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6531981a2388ac007bc92bf0d04e879e') in 0.006284 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000230 seconds.
+  path: Assets/Video/ARA_2_winter_FHD.mp4
+  artifactKey: Guid(9f96525789a88ff4ea8ac701bd3964f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Video/ARA_2_winter_FHD.mp4 using Guid(9f96525789a88ff4ea8ac701bd3964f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7cf3ff7edecd8dd3445b1f73afc9930') in 0.006102 seconds 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
