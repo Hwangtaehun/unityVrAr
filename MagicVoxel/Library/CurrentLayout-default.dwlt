@@ -45,7 +45,7 @@ MonoBehaviour:
     y: 30
     width: 1706.6666
     height: 926
-  m_MinSize: {x: 677, y: 492}
+  m_MinSize: {x: 678, y: 492}
   m_MaxSize: {x: 14001, y: 14042}
   vertical: 0
   controlID: 57
@@ -95,8 +95,8 @@ MonoBehaviour:
     y: 0
     width: 342.66666
     height: 548.6667
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -225,7 +225,7 @@ MonoBehaviour:
     y: 0
     width: 1252.6666
     height: 926
-  m_MinSize: {x: 402, y: 492}
+  m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
   controlID: 58
@@ -250,8 +250,8 @@ MonoBehaviour:
     y: 0
     width: 1252.6666
     height: 548.6667
-  m_MinSize: {x: 402, y: 221}
-  m_MaxSize: {x: 8002, y: 4021}
+  m_MinSize: {x: 403, y: 221}
+  m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
   controlID: 59
 --- !u!114 &11
@@ -605,22 +605,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs
+    - Assets/Scripts
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Github\unityVrAr\MagicVoxel
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 0a3e0000
-    m_LastClickedID: 15882
-    m_ExpandedIDs: 00000000623d000000ca9a3b
+    m_SelectedIDs: 9e3d0000
+    m_LastClickedID: 15774
+    m_ExpandedIDs: 00000000903d000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -648,7 +648,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000623d0000
+    m_ExpandedIDs: 00000000903d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -769,8 +769,8 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 263d0000
-      m_LastClickedID: 15654
+      m_SelectedIDs: 2c3d0000
+      m_LastClickedID: 15660
       m_ExpandedIDs: 6cfbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -831,9 +831,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.52096, y: 2.5160055, z: 1.0624789}
+    m_Target: {x: -0.31335592, y: 2.130548, z: 1.5390266}
     speed: 2
-    m_Value: {x: 0.52096, y: 2.5160055, z: 1.0624789}
+    m_Value: {x: -0.31335592, y: 2.130548, z: 1.5390266}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -880,13 +880,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.10220667, y: 0.87019145, z: -0.436905, w: 0.20356652}
+    m_Target: {x: 0.0034889893, y: 0.8326971, z: -0.5536977, w: 0.0052464134}
     speed: 2
-    m_Value: {x: 0.10220644, y: 0.8701895, z: -0.436904, w: 0.20356606}
+    m_Value: {x: 0.0034889802, y: 0.8326949, z: -0.5536963, w: 0.0052463994}
   m_Size:
-    m_Target: 0.8660254
+    m_Target: 1.6038315
     speed: 2
-    m_Value: 0.8660254
+    m_Value: 1.6038315
   m_Ortho:
     m_Target: 0
     speed: 2
