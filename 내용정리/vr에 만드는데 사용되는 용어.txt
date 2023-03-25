@@ -55,3 +55,8 @@ durationSeconds: 지속 시간
 frequency: 빈도
 amplitude: 진동 크기
 inputSource: LeftHand, RightHand
+
+조준점: 크로스헤어(crosshair)
+
+DrawCrosshair함수의 원형
+public static void DrawCrosshair(Transform crosshair, bool isHand = true, Controller hand = Controller.RTouch);
