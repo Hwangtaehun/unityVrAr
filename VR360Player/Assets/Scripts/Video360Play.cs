@@ -23,12 +23,12 @@ public class Video360Play : MonoBehaviour
     void Update()
     {
         /*컴퓨터에서 영상을 변경하기 위한 기능*/
-        if(Input.GetKeyDown(KeyCode.LeftBracket)) //왼쪽 대괄호 입력 시 이전 영상
+        if (Input.GetKeyDown(KeyCode.LeftBracket)) //왼쪽 대괄호 입력 시 이전 영상
         {
             //vp.clip = vcList[0];
             SwapVideoClip(false);
         }
-        else if(Input.GetKeyDown(KeyCode.RightBracket))
+        else if (Input.GetKeyDown(KeyCode.RightBracket))
         {
             //vp.clip = vcList[1];
             SwapVideoClip(true);
@@ -47,12 +47,12 @@ public class Video360Play : MonoBehaviour
         vp.Stop();               //현재 재생 중인 비디오 클립을 중지한다.
 
         /*재생될 영상을 고르기 위한 과정*/
-        if(isNext)
+        if (isNext)
         {
             /*배열의 다음 영상을 재생한다.
              리스트 전체 길이보다 크면 클립을 리스트의 첫 번째 영상 지정한다.*/
             setVCnum = (setVCnum + 1) % vcList.Length;
-            
+
         }
         else
         {
@@ -62,13 +62,13 @@ public class Video360Play : MonoBehaviour
 
         vp.clip = vcList[setVCnum]; /*클립을 변경한다.*/
         vp.Play();                  /*바뀐 크립을 재생한다.*/
-        curVCidx = setVCnum;        
+        curVCidx = setVCnum;
     }
 
     public void SetVideoPlay(int num)
     {
         //현재 재생 중인 번호가 전달받은 번호와 다를 때만 실행
-        if(curVCidx != null)
+        if (curVCidx != num)
         {
             vp.Stop();              //영상을 멈춘다.
             vp.clip = vcList[num];  //클립을 변경한다.

@@ -51,4 +51,12 @@ public class VideoFrame : MonoBehaviour
             }
         }
     }
+
+    private void OnEnable()
+    {
+        if (vp != null)
+        {
+            vp.Stop();
+        }
+    }
 }

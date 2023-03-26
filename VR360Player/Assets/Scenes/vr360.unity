@@ -233,6 +233,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &326140455 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2271615217707652742, guid: 1bc0b3fb1211a944e8d489d38e701540, type: 3}
+  m_PrefabInstance: {fileID: 2023624197}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &360360811 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 858298641255492971, guid: 1bc0b3fb1211a944e8d489d38e701540, type: 3}
@@ -293,7 +298,7 @@ PrefabInstance:
     - target: {fileID: 1833785533, guid: 004bc44822c1ef0409a57a2f34bc8f31, type: 3}
       propertyPath: m_VideoClip
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 32900000, guid: e5b07607bf5e6004f803545480bf2083, type: 3}
     - target: {fileID: 807848469262294734, guid: 004bc44822c1ef0409a57a2f34bc8f31, type: 3}
       propertyPath: m_Name
       value: Sphere_128_flip
@@ -515,11 +520,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5733357837984060097, guid: 1bc0b3fb1211a944e8d489d38e701540, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.8870109
       objectReference: {fileID: 0}
     - target: {fileID: 5733357837984060097, guid: 1bc0b3fb1211a944e8d489d38e701540, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: 0.46174863
       objectReference: {fileID: 0}
     - target: {fileID: 5733357837984060097, guid: 1bc0b3fb1211a944e8d489d38e701540, type: 3}
       propertyPath: m_LocalRotation.y
@@ -531,7 +536,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5733357837984060097, guid: 1bc0b3fb1211a944e8d489d38e701540, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: 55
       objectReference: {fileID: 0}
     - target: {fileID: 5733357837984060097, guid: 1bc0b3fb1211a944e8d489d38e701540, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -560,6 +565,7 @@ GameObject:
   - component: {fileID: 2072238505}
   - component: {fileID: 2072238509}
   - component: {fileID: 2072238508}
+  - component: {fileID: 2072238510}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -646,7 +652,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uiCanvas: {fileID: 1023062098}
   gazeImg: {fileID: 409695451}
-  uiScaleVal: 0.03
+  uiScaleVal: 1
   gazeChargeTime: 3
   vp360: {fileID: 0}
 --- !u!114 &2072238509
@@ -662,3 +668,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sensitivity: 200
+--- !u!114 &2072238510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2072238504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7bd83b85b50fcd43a5a6289b364e9c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  videoFrameMenu: {fileID: 326140455}
+  dot: 0
