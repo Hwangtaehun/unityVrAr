@@ -120,12 +120,6 @@ public class GrabObject : MonoBehaviour
         Vector3 throwDirection = (ARAVRInput.RHandPosition - prevPos);
         // 위치 기억
         prevPos = ARAVRInput.RHandPosition;
-        // 쿼터니온 공식
-        // angle1 = Q1, angle2 = Q2
-        // angle1 + angle2 = Q1 * Q2
-        // -angle2 = Quaternion.Inverse(Q2)
-        // angle2 - angle1 = Quaternion.FromToRotation(Q1, Q2) = Q2 * Quaternion.Inverse(Q1)
-        // 회전 방향 = current - previous의 차 로 구함. - previous는 Inverse로 구함.
         Quaternion deltaRotation = ARAVRInput.RHand.rotation * Quaternion.Inverse(prevRot);
         // 이전 회전 저장
         prevRot = ARAVRInput.RHand.rotation;
