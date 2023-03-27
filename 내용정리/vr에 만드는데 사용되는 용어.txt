@@ -60,3 +60,12 @@ inputSource: LeftHand, RightHand
 
 DrawCrosshair함수의 원형
 public static void DrawCrosshair(Transform crosshair, bool isHand = true, Controller hand = Controller.RTouch);
+
+쿼터나온 연산 공식
+angle1 = Q1, angle2 = Q2
+1.angle1 + angle2 = Q1 * Q2
+2.-angle2 = Quaternion.Inverse(Q2)
+3.angle2 - angle1 = Quaternion.FromToRotation(Q1, Q2) = Q2*Quaternion.Inverse(Q1)
+
+SphereCast()함수의 원형
+public static bool SphereCast(Ray ray, float radius, out RaycastHit hitInfo, float maxDistance, int layerMask);

@@ -25,6 +25,8 @@ public class Gun : MonoBehaviour
         //사용자가 IndextTrigger버튼을 누르면
         if(ARAVRInput.GetDown(ARAVRInput.Button.IndexTrigger))
         {
+            //컨트롤러의 진동 재생
+            ARAVRInput.PlayVibration(ARAVRInput.Controller.RTouch);
             //Ray를 카메라의 위치로 부터 나가도록 만든다.
             Ray ray = new Ray(ARAVRInput.RHandPosition, ARAVRInput.RHandDirection);
             //Ray의 충돌 정보를 저장하기 위한 변수 지정

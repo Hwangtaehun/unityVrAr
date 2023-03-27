@@ -28,7 +28,7 @@ public class TeleportStraight : MonoBehaviour
 
     void Update()
     {
-        if(ARAVRInput.GetUp(ARAVRInput.Button.One, ARAVRInput.Controller.LTouch))
+        if(ARAVRInput.GetDown(ARAVRInput.Button.One, ARAVRInput.Controller.LTouch))
         {
             lr.enabled = true;
         }

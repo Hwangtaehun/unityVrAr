@@ -1,0 +1,8 @@
+//오큘러스에서 속도, 각속도 얻기
+OVRInput.GetLocalControllerVelocity(OVRInput.Controller.RTouch);
+OVRInput.GetLocalControllerAngularVelocity(OVRInput.Controller.RTouch);
+//바이브에서 속도, 각속도 얻기
+Valve.VR.SteamVR_Behaviour_Pose controllerPose = null;
+controllerPose = ARAVRInput.RHand.GetComponent<Valve.VR.StreamVR_Behaviour_Pose>();
+controllerPose.GetVelocity();
+controllerPose.GetAngularVelocity();
