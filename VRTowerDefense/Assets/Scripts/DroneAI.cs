@@ -30,6 +30,12 @@ public class DroneAI : MonoBehaviour
     public float attackRange = 3.0f;
     //공격 지연 시간
     public float attackDelayTime = 2.0f;
+    [SerializeField] /*private속성이지만 에디터에 노출된다.*/
+    int hp = 3; //체력
+    //폭팔 효과
+    Transform explosion;
+    ParticleSystem expEffect;
+    AudioSource expAudio;
     
 
     void Start()
@@ -40,6 +46,10 @@ public class DroneAI : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         //agent의 속도 설정
         agent.speed = moveSpeed;
+
+        explosion = GameObject.Find("Explosion").transform;
+        expEffect = explosion.GetComponent<ParticleSystem>();
+        expAudio = explosion.GetComponent<AudioSource>();
     }
 
     void Update()
@@ -58,7 +68,7 @@ public class DroneAI : MonoBehaviour
                 Attack();
                 break;
             case DroneState.Damage:
-                Damage();
+                //Damage();
                 break;
             case DroneState.Die:
                 Die();
@@ -108,7 +118,55 @@ public class DroneAI : MonoBehaviour
         }
     }
 
-    private void Damage() { }
+    //피격 상태 알림 이벤트 함수
+    public void OnDamageProcess()
+    {
+        // 체력을 감소시키고 죽지 않았다면 상태를 데미지로 전환하고 싶다.
+        // 1.체력 감소
+        hp--;
+        // 2.만약 죽지 않았다면
+        if (hp > 0)
+        {
+            // 3. 상태를 데미지로 전환
+            state = DroneState.Damage;
+            // 코루틴 호출
+            StopAllCoroutines();
+            StartCoroutine(Damage());
+        }
+        else
+        {
+            //폭발 효과의 위치 지정
+            explosion.position = transform.position;
+            //이펙트 재생
+            expEffect.Play();
+            //이펙트 사운드 재생
+            expAudio.Play();
+            //드론 없애기
+            Destroy(gameObject);
+        }
+    }
+
+    IEnumerator Damage() 
+    {
+        // 길 찾기 중지
+        agent.enabled = false;
+        // 자식 객체의 MeshRenderer로부터 매터리얼 얻어오기
+        Material mat = GetComponentInChildren<MeshRenderer>().material;
+        // 원래 색을 저장
+        Color originalColor = mat.color;
+        // 매터리얼의 색 변경
+        mat.color = Color.red;
+
+        // 0.1초 기다리기
+        yield return new WaitForSeconds(0.1f);
+
+        // 매터리얼의 색 원래대로
+        mat.color = originalColor;
+        // 상태를 Idle로 전환
+        state = DroneState.Idle;
+        // 경과 시간 초기화
+        currentTime = 0;
+    }
 
     private void Die() { }
 }
