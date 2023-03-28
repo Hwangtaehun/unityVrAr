@@ -71,9 +71,4 @@ public class Tower : MonoBehaviour
         //damageImage는 보이지 않도록 초기에 비활성화해 놓는다
         damageImage.enabled = false;
     }
-
-    void Update()
-    {
-        
-    }
 }
