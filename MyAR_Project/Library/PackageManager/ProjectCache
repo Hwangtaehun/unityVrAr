@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638156547958524292
-    m_Hash: 4276820100
+      ticks: 638156554099984891
+    m_Hash: 3112955679
   m_LockFileStatus:
     m_FilePath: D:/Github/unityVrAr/MyAR_Project/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638156547958594539
-    m_Hash: 3377292346
+      ticks: 638156554099984891
+    m_Hash: 128417003
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
